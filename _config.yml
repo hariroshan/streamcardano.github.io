@@ -23,4 +23,7 @@ permalink: /:categories/:year/:month/:day/:title
 markdown: kramdown
 exclude: ["README.md"]
 
-theme: alembic-jekyll-theme
+plugins:
+  - jekyll-gist
+  - jekyll-remote-theme
+remote_theme: pages-themes/hacker@v0.2.0
