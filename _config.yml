@@ -15,15 +15,42 @@ url: "https://streamcardano.github.io" # the base hostname & protocol for your s
 twitter_username: migamake
 github_username:  migamake
 gitlab_username:  migamake
+repository:       streamcardano/streamcardano.github.io
 
 # Outputting
 permalink: /:categories/:year/:month/:day/:title
 
 # Build settings
 markdown: kramdown
-exclude: ["README.md"]
+exclude: ["README.md", "node_modules"]
 
 plugins:
   - jekyll-gist
   - jekyll-remote-theme
+  - jekyll-spaceship
+  - jekyll-responsive-image
+  - jekyll-seo-tags
+  - jekyll-sitemap
 remote_theme: pages-themes/hacker@v0.2.0
+#remote_theme:  Wiredcraft/carte
+#remote_theme: just-the-docs/just-the-docs
+#remote_theme: tomjoht/documentation-theme-jekyll
+#remote_theme: karloespiritu/BlackDoc
+
+jekyll-spaceship:
+  # default enabled processors
+  processors:
+    - table-processor
+    - mathjax-processor
+    - plantuml-processor
+    - mermaid-processor
+    - polyfill-processor
+    - element-processor
+html_proofer:
+  check_favicon: true
+  check_html: true
+  file_ignore:
+    - /a.*regexp*/
+    - a_string
+
+
