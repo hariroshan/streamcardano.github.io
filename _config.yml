@@ -10,8 +10,8 @@ title: StreamCardano project
 email: migamake@migamake.com
 description: > # this means to ignore newlines until "baseurl:"
   StreamCardano project home page.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "/" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "streamcardano.gitlab.io/" # the base hostname & protocol for your site
 twitter_username: migamake
 github_username:  migamake
 gitlab_username:  migamake
