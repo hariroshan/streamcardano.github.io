@@ -14,11 +14,26 @@
       </a>
 
       <div class="trigger">
-        {% for my_page in site.pages %}
+        <!-- {% for my_page in site.pages %}
           {% if my_page.title %}
           <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
           {% endif %}
-        {% endfor %}
+        {% endfor %} -->
+
+        <div class="nav-menu">
+          <ul class="menu">
+          {% for link in site.navigation %}
+            {% assign current = nil %}
+            {% if page.url == link.url %}
+              {% assign current = 'nav-current' %}
+            {% endif %}
+            <li class="{{ current }}">
+              <a class="{{ current }} {{link.title | downcase  }}" href="{{ link.url }}">{{ link.title }}</a>
+
+            </li>
+          {% endfor %}
+          </ul>        
+      </div>
       </div>
     </nav>
 

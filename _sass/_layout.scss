@@ -111,6 +111,12 @@
 .social-media-list {
     list-style: none;
     margin-left: 0;
+    text-align: center;
+
+    li{
+         display: inline-block;
+         margin: 0px 15px;
+    }
 }
 
 .footer-col-wrapper {
@@ -118,6 +124,13 @@
     color: $grey-color;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
+
+    &.copyright{
+        text-align: center;
+        border-top: 1px solid $grey-color-light;
+        padding-top: 15px;
+
+    }
 }
 
 .footer-col {

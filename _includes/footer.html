@@ -2,16 +2,30 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+    <!-- <h2 class="footer-heading">{{ site.title }}</h2> -->
 
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
+      <div class="">
         <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          {% if site.gitlab_username %}
+          <li>
+            <a href="https://github.com/{{ site.gitlab_username }}" class="fa-github-alt square fill-horizontal"><span class="screen-reader-text">GitHub</span></a></li>
+            {% endif %}
+          {% if site.catalyst %}
+          <li><a  href="www.catalytic.com/{{ site.catalyst }}">Catalyst</a></li>
+          {% endif %}
+          {% if site.discord_channel %}
+            <li><a  href="https://discord.gg/{{ site.discord_channel }}">Discord</a></li>            
+          {% endif %}
+          {% if site.keybase_channel %}
+            <li><a  href="https://keybase.io/{{ site.keybase_channel }}">Keybase</a></li>            
+          {% endif %}
+          {% if site.telegram_channel %}
+            <li><a  href="https://t.me/{{ site.telegram_channel }}">Telegram</a></li>            
+          {% endif %}
         </ul>
       </div>
-
+<!-- 
       <div class="footer-col footer-col-2">
         <ul class="social-media-list">
           {% if site.gitlab_username %}
@@ -20,9 +34,9 @@
           </li>
           {% endif %}
 
-          {% if site.github_username %}
+          {% if site.gitlab_username %}
           <li>
-            {% include icon-github.html username=site.github_username %}
+            {% include icon-github.html username=site.gitlab_username %}
           </li>
           {% endif %}
 
@@ -32,11 +46,15 @@
           </li>
           {% endif %}
         </ul>
-      </div>
+      </div> -->
 
-      <div class="footer-col footer-col-3">
+      <!-- <div class="footer-col footer-col-3">
         <p>{{ site.description }}</p>
-      </div>
+      </div> -->
+    </div>
+
+    <div class="footer-col-wrapper copyright">
+      &copy; Copyright by <a target="_blank" href="https://www.migamake.com">Migamake Pte Ltd</a>
     </div>
 
   </div>

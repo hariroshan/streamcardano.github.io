@@ -15,12 +15,68 @@ url: "https://streamcardano.gitlab.io" # the base hostname & protocol for your s
 twitter_username: migamake
 github_username:  migamake
 gitlab_username:  migamake
+google_analytics: 
 
 # Outputting
 permalink: /:categories/:year/:month/:day/:title
 
+collections:
+  posts:
+    output: true
+    permalink: /news/:path/
+  demos:
+    output: true
+    permalink: /demos/:path/
+  docs:
+    output: true
+    permalink: /docs/:path/
+  partners:
+    output: true
+    permalink: /partners/:path/
+  downloads:
+    output: true
+    permalink: /downloads/:path/
+
 # Build settings
 markdown: kramdown
 exclude: ["README.md"]
+plugins:
+  - jekyll-sitemap
+  - jekyll-image-size
+  - jekyll-resize
+  - jekyll-image-optim
+  # - jekyll-responsive_image
+
+sitemap:
+    file: "/sitemap.xml"
+    exclude:
+        - "/rss.xml"
+        - "/atom.xml"
+        - "/feed.xml"
+        - "/feed/index.xml"
+    include_posts:
+        - "/index.html"
+    change_frequency_name: "change_frequency"
+    priority_name: "priority"
 
 theme: alembic-jekyll-theme
+
+# Site navigation
+navigation:
+- title: News
+  url: /news/
+- title: Demos
+  url: /demos/
+- title: Partners
+  url: /partners/
+- title: Docs
+  url: /docs/
+- title: App
+  url: https://app.streamcardano.com
+
+# footer link/id
+catalyst: username
+discord_channel: username
+keybase_channel: username
+telegram_channel: username
+
