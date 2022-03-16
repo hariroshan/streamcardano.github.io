@@ -1,0 +1,11 @@
+docs_list_title: StreamCardano home page.
+docs:
+
+- title: News
+  url: /news
+
+- title: Partners
+  url: /partners
+
+- title: Documentation
+  url: #
