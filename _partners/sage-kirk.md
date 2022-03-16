@@ -1,11 +1,12 @@
 ---
-title: "Mike Vance"
-date: 2018-12-20T13:44:30+10:00
+title: "Sage Kirk"
+date: 2018-11-19T10:47:58+10:00
 draft: false
-image: "images/team/joseph-gonzalez-399972-unsplash.jpg"
-jobtitle: "Art Director"
-linkedinurl: ""
-weight: 3
+image: "images/team/sage-kirk-485982-unsplash.jpg"
+jobtitle: "Accounting Partner"
+linkedinurl: "https://www.linkedin.com/example2"
+promoted: true
+weight: 2
 layout: partner
 ---
 

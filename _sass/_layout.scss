@@ -18,6 +18,8 @@
     margin-bottom: 0;
     float: left;
 
+    max-width: 150px;
+
     &,
     &:visited {
         color: $grey-color-dark;

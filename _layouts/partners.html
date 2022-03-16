@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+        {{ content }}
+
+        <div class="row">
+          {% assign partners = site.partners  | sort: "weight" %}
+          {% for partner in partners %}
+          <div class="col-12 col-md-6 mb-3">
+              <div class="partner partner-summary">              
+                  <div class="partner-meta">
+                      <h2 class="partner-name"><a href="{{ partner.url | relative_url }}">{{ partner.title }}</a></h2>
+                      <p class="partner-description">{{ partner.jobtitle }}</p>
+                  </div>
+              </div>
+          </div>
+          {% endfor %}
+
+        </div>
+

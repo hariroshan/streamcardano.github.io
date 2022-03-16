@@ -1,11 +1,10 @@
 ---
-title: "Mike Vance"
-date: 2018-12-20T13:44:30+10:00
+title: "Susan Shelton"
+date: 2018-12-20T13:45:06+10:00
 draft: false
-image: "images/team/joseph-gonzalez-399972-unsplash.jpg"
-jobtitle: "Art Director"
-linkedinurl: ""
-weight: 3
+image: "images/team/cristian-newman-94319-unsplash.jpg"
+jobtitle: "Developer"
+weight: 5
 layout: partner
 ---
 
