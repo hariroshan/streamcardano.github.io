@@ -9,9 +9,14 @@ layout: default
           {% for partner in partners %}
           <div class="col-12 col-md-6 mb-3">
               <div class="partner partner-summary">              
-                  <div class="partner-meta">
-                      <h2 class="partner-name"><a href="{{ partner.url | relative_url }}">{{ partner.title }}</a></h2>
-                      <p class="partner-description">{{ partner.jobtitle }}</p>
+                  <div class="partner-meta row">
+                      <div class="image-holder col-3">
+                        <img src="{{ partner.image  }}" alt="{{ partner.title }}">
+                      </div>
+                      <div class="col-9">                        
+                        <h2 class="partner-name"><a href="{{ partner.url | relative_url }}">{{ partner.title }}</a></h2>
+                        <p class="partner-description">{{ partner.jobtitle }}</p>
+                      </div>
                   </div>
               </div>
           </div>

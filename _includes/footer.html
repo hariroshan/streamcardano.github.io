@@ -12,16 +12,16 @@
             <a href="https://github.com/{{ site.gitlab_username }}" class="fa-github-alt square fill-horizontal"><span class="screen-reader-text">GitHub</span></a></li>
             {% endif %}
           {% if site.catalyst %}
-          <li><a  href="www.catalytic.com/{{ site.catalyst }}">Catalyst</a></li>
+          <li><a  href="{{ site.catalyst }}">Catalyst</a></li>
           {% endif %}
           {% if site.discord_channel %}
-            <li><a  href="https://discord.gg/{{ site.discord_channel }}">Discord</a></li>            
+            <li><a  href="{{ site.discord_channel }}">Discord</a></li>            
           {% endif %}
           {% if site.keybase_channel %}
-            <li><a  href="https://keybase.io/{{ site.keybase_channel }}">Keybase</a></li>            
+            <li><a  href="{{ site.keybase_channel }}">Keybase</a></li>            
           {% endif %}
           {% if site.telegram_channel %}
-            <li><a  href="https://t.me/{{ site.telegram_channel }}">Telegram</a></li>            
+            <li><a  href="{{ site.telegram_channel }}">Telegram</a></li>            
           {% endif %}
         </ul>
       </div>

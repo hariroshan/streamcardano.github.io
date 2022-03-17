@@ -73,11 +73,12 @@ navigation:
 - title: Docs
   url: https://streamcardano.readme.io
 - title: App
-  url: https://app.streamcardano.com
+  url: /in-progress
+  # url: https://app.streamcardano.com
 
 # footer link/id
-catalyst: username
-discord_channel: username
-keybase_channel: username
-telegram_channel: username
+catalyst: https://cardano.ideascale.com/a/community/login
+discord_channel: https://discord.gg/VRcs553q
+keybase_channel: https://keybase.io/team/migamakeusers
+telegram_channel: https://t.me/migamake
 
