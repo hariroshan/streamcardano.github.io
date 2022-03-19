@@ -1,5 +1,20 @@
 <footer class="footer-section">
 	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-12 text-center">
+				<p class="footer-channel">
+					{% if site.discord %}
+					<a href="{{ site.discord }}" target="_blank">Discord</a>
+					{% endif %}
+					{% if site.keybase %}
+					<a href="{{ site.keybase }}" target="_blank">Keybase</a>
+					{% endif %}
+					{% if site.telegram %}
+					<a href="{{ site.telegram }}" target="_blank">Telegram</a>
+					{% endif %}
+				</p>
+			</div>
+		</div>
 	
 		<div class="col-xs-12 col-sm-6 copyright pL0">
 			<p>© Copyright. SearChain All Rights Reserved | Migamake Pte Ltd.</p>
@@ -12,8 +27,7 @@
 				<li><a href="#">Privacy Policy</a></li>
 			</ul>
 		</div>
-		
 	</div>
 </footer>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-<script src="js/bootstrap.min.js"></script>
+<!-- <script src="js/bootstrap.min.js"></script> -->

@@ -7,5 +7,11 @@ docs:
 - title: Partners
   url: /partners
 
+- title: Demo
+  url: /demo
+
 - title: Documentation
   url: #
+
+- title: App Login
+  url: /register
