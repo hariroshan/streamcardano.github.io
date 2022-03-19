@@ -1,21 +1,14 @@
 ---
-layout: default
+layout: home
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">{{ site.data.manu.docs_list_title }}</h1>
-
-  <ul class="post-list">
-    {% for item in site.data.manu.docs %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ item.url }}">{{ item.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="container">
+  <div class="col-xs-12 text-box">
+    <h4>Welcome To</h4>
+    <h1>Sear Chain</h1>
+    <p>Streamlines Cardano dApp Development</p>
+  </div>
 </div>
+
+ <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
