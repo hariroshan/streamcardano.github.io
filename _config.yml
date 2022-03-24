@@ -40,7 +40,7 @@ collections:
 
 # Build settings
 markdown: kramdown
-exclude: ["README.md"]
+exclude: ["README.md", "vendor"]
 plugins:
   - jekyll-sitemap
   - jekyll-image-size
