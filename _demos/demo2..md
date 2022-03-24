@@ -6,7 +6,7 @@ image: "images/team/nonsap-visuals-kMJp7620W6U-unsplash.jpg"
 jobtitle: "Demo for BS5"
 linkedinurl: ""
 weight: 2
-layout: partner
+layout: demos
 ---
 **Git:** [Git link](https://github.com/)
 

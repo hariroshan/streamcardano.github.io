@@ -134,6 +134,7 @@ GEM
       concurrent-ruby (~> 1.0)
     tzinfo-data (1.2021.5)
       tzinfo (>= 1.0.0)
+    wdm (0.1.1)
     webrick (1.7.0)
 
 PLATFORMS
@@ -141,12 +142,14 @@ PLATFORMS
 
 DEPENDENCIES
   alembic-jekyll-theme
+  jekyll (= 3.9.1)
   jekyll-image-optim
   jekyll-image-size
   jekyll-resize!
   jekyll-sitemap
   kramdown-parser-gfm
   tzinfo-data
+  wdm (>= 0.1.0)
   webrick (~> 1.7)
 
 RUBY VERSION

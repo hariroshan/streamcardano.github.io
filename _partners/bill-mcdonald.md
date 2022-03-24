@@ -2,7 +2,7 @@
 title: "Bill McDonald"
 date: 2018-11-19T10:47:58+10:00
 draft: false
-image: "http://placehold.jp/150x150.png"
+image: ""
 jobtitle: "Graphic Designer"
 linkedinurl: ""
 weight: 7

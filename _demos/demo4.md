@@ -6,7 +6,7 @@ image: "images/team/nonsap-visuals-kMJp7620W6U-unsplash.jpg"
 jobtitle: "Demo for Jekyll"
 linkedinurl: ""
 weight: 4
-layout: partner
+layout: demo
 ---
 **Git:** [Git link](https://github.com/)
 

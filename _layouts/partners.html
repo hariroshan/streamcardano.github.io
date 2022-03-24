@@ -11,7 +11,13 @@ layout: default
               <div class="partner partner-summary">              
                   <div class="partner-meta row">
                       <div class="image-holder col-3">
-                        <img src="{{ partner.image  }}" alt="{{ partner.title }}">
+                        
+                        {% if page.image == blank %} 
+                        <img src="http://placehold.jp/150x150.png" alt="{{ page.title }}"> 
+                        {% else %} 
+                        <img src="{{ page.image  }}" alt="{{ page.title }}">
+                        {% endif %}
+                  
                       </div>
                       <div class="col-9">                        
                         <h2 class="partner-name"><a href="{{ partner.url | relative_url }}">{{ partner.title }}</a></h2>
