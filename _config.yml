@@ -40,7 +40,7 @@ collections:
 
 # Build settings
 markdown: kramdown
-exclude: ["README.md"]
+exclude: ["README.md", "vendor"]
 plugins:
   - jekyll-sitemap
   - jekyll-image-size
@@ -60,25 +60,36 @@ sitemap:
     change_frequency_name: "change_frequency"
     priority_name: "priority"
 
-theme: alembic-jekyll-theme
+# theme: alembic-jekyll-theme
+
 
 # Site navigation
 navigation:
 - title: News
   url: /news/
+  icon: ico-news
 - title: Demos
   url: /demos/
+  icon: ico-exm
 - title: Partners
   url: /partners/
+  icon: ico-news
 - title: Docs
   url: https://streamcardano.readme.io
+  icon: ico-doc
 - title: App
   url: /in-progress
+  icon: ico-exm
   # url: https://app.streamcardano.com
+- title: login
+  url: "/in-progress"
+  btnClass: btn-brdr
+- title: Signup
+  url: "/in-progress"
+  btnClass: btn-fill
 
 # footer link/id
 catalyst: https://cardano.ideascale.com/a/community/login
 discord_channel: https://discord.gg/VRcs553q
 keybase_channel: https://keybase.io/team/migamakeusers
 telegram_channel: https://t.me/migamake
-

@@ -3,6 +3,7 @@ ruby RUBY_VERSION
 
 # This will help ensure the proper Jekyll version is running.
 # gem "jekyll", "3.4.0"
+gem "jekyll", "3.9.1"
 gem "alembic-jekyll-theme"
 # gem "kramdown-parser-gfm"
 group :jekyll_plugins do
@@ -20,4 +21,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 gem "webrick", "~> 1.7"
+
+gem 'wdm', '>= 0.1.0'
 

@@ -6,7 +6,7 @@ image: "images/team/nonsap-visuals-kMJp7620W6U-unsplash.jpg"
 jobtitle: "Demo for test1"
 linkedinurl: ""
 weight: 7
-layout: partner
+layout: demos
 ---
 **Git:** [Git link](https://github.com/)
 
