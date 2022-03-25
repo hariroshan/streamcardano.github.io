@@ -1,11 +1,7 @@
 ---
-title: "Demo1"
-date: 2018-11-19T10:47:58+10:00
-draft: false
-jobtitle: "Demo for test1"
-linkedinurl: ""
-weight: 7
-layout: demos
+title: "This is second Demo post"
+date: 2022-03-12T10:47:58+10:00
+layout: post
 ---
 
 Today our [second submission](https://cardano.ideascale.com/c/idea/396549)

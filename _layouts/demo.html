@@ -1,5 +1,24 @@
 ---
 layout: post
+permalink: /news/
+title: Demo Posts
 ---
 
-{{ content }}
+<div class="container">
+
+  <h1 class="page-heading">Demo</h1>
+  {% assign sorted_demos = site.demo | sort: "date" %}
+  {% for post in sorted_demos %}
+    <article class="post">
+      <h1>
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </h1>
+      <div>
+        <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
+      </div>
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+    </article>
+  {% endfor %}
+</div>

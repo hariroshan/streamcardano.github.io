@@ -62,4 +62,10 @@ discord: https://discord.gg/VRcs553q
 keybase: https://keybase.io/team/migamakeusers
 telegram: https://t.me/migamake7
 
+# Collections
+collections:
+  demo:
+    output: true
+    permalink: /demo/:path/
+
 

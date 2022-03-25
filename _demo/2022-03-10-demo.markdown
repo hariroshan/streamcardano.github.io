@@ -1,8 +1,7 @@
 ---
+title: "This is first Demo post"
+date: 2022-03-10T10:47:58+10:00
 layout: post
-title:  "Catalyst project submission"
-date:   2022-03-12 15:00:00 +0100
-categories: partners
 ---
 
 Today our [second submission](https://cardano.ideascale.com/c/idea/396549)
