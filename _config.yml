@@ -29,13 +29,12 @@ exclude:
 
 plugins:
   - jekyll-gist
-  - jekyll-remote-theme
-  - jekyll-spaceship
-  - jekyll-responsive-image
-  - jekyll-seo-tags
+  #- jekyll-spaceship
   - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-feed
+  #- jekyll-paginate
+  #- jekyll-feed
+  #- jekyll-image-size
+
 remote_theme: pages-themes/hacker@v0.2.0
 #remote_theme:  Wiredcraft/carte
 #remote_theme: just-the-docs/just-the-docs
