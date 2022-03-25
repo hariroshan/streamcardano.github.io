@@ -18,9 +18,9 @@ docs:
   icon: ico-doc
 
 - title: App Login
-  url: #
+  url: /in-progress
   class: btn-brdr
 
 - title: Signup
-  url: #
+  url: /in-progress
   class: btn-fill
