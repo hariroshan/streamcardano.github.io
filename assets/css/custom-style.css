@@ -5,7 +5,7 @@ html, body{ height:100%; }
 .header-section{float:left; width:100%;}
 .navbar{ background-color: transparent; border-width: 11px 0px 0px 0px; border-color: #109949; border-radius: 0; padding-top: 10px; }
 .navbar-brand { height: auto; padding: 0; }
-.navbar-nav{margin-top: 35px;}
+.navbar-nav{margin-top: 20px;}
 .navbar-left{margin-left:15px;}
 .navbar li{margin:0 20px;}
 .navbar li a{font-family: 'Roboto', sans-serif; font-style: normal; font-weight: 700; font-size: 13px; line-height: 15px; text-transform: uppercase; color: #000000; padding: 6px 0px;}

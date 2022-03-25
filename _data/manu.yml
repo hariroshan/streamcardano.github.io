@@ -3,15 +3,24 @@ docs:
 
 - title: News
   url: /news
+  icon: ico-news
+
+- title: Demos
+  url: /demos
+  icon: ico-exm
 
 - title: Partners
   url: /partners
+  icon: ico-exm
 
-- title: Demo
-  url: #
-
-- title: Documentation
-  url: #
+- title: Docs
+  url: https://streamcardano.readme.io
+  icon: ico-doc
 
 - title: App Login
   url: #
+  class: btn-brdr
+
+- title: Signup
+  url: #
+  class: btn-fill

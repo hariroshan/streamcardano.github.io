@@ -292,7 +292,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  github-pages
+  github-pages (~> 225)
   html-proofer
   jekyll (= 3.9.0)
   jekyll-gist
@@ -304,4 +304,4 @@ RUBY VERSION
    ruby 2.7.4p191
 
 BUNDLED WITH
-   2.3.9
+   2.3.10

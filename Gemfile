@@ -5,8 +5,8 @@ ruby "2.7.4"
 gem "jekyll", "3.9.0"
 gem "jekyll-gist"
 #gem "jekyll-theme-hacker"
-#gem "github-pages", "~> 225", group: :jekyll_plugins
-gem "github-pages", group: :jekyll_plugins
+gem "github-pages", "~> 225", group: :jekyll_plugins
+#gem "github-pages", group: :jekyll_plugins
 #gem 'jekyll-theme-hacker', '~> 0.2.0'
 gem 'rake'
 gem 'html-proofer'
