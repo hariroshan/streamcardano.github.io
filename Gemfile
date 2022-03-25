@@ -2,17 +2,16 @@ source "https://rubygems.org"
 ruby RUBY_VERSION
 
 # This will help ensure the proper Jekyll version is running.
-gem "jekyll", "4.2.2"
 # gem "jekyll", "3.4.0"
-# gem "jekyll", "3.9.1"
-# gem "alembic-jekyll-theme"
+gem "jekyll", "3.9.1"
+gem "alembic-jekyll-theme"
 # gem "kramdown-parser-gfm"
 group :jekyll_plugins do
   gem "kramdown-parser-gfm"
   gem "jekyll-sitemap"
   gem "jekyll-image-size"
   gem "jekyll-resize", git: "https://github.com/MichaelCurrin/jekyll-resize"
-  # gem "jekyll-image-optim"
+  gem "jekyll-image-optim"
   # gem "jekyll-responsive_image"
 end
 

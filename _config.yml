@@ -39,14 +39,13 @@ collections:
     permalink: /downloads/:path/
 
 # Build settings
-# encoding: utf-8
 markdown: kramdown
 exclude: ["README.md", "vendor"]
 plugins:
   - jekyll-sitemap
   - jekyll-image-size
   - jekyll-resize
-  # - jekyll-image-optim
+  - jekyll-image-optim
   # - jekyll-responsive_image
 
 sitemap:
