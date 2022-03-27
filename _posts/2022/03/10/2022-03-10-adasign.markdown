@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "AdaSign"
+date:   2022-03-10 15:00:00 +0100
+categories: partners
+---
+
+[AdaSign](https://cardano.ideascale.com/c/idea/401010) project plans to build on StreamCardano platform.
+
+It is another project of [Migamake](https://www.migamake.com).
+
