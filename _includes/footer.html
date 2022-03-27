@@ -22,9 +22,13 @@
 		
 		<div class="col-xs-12 col-sm-6 ftr-menu pR0">
 			<ul>
-				<li><a href="#">Terms & Condition</a></li>
+				{% if site.terms %}
+				<li><a href="{{ site.terms }}">Terms & Condition</a></li>
+				{% endif %}
 				<li><a>|</a></li>
-				<li><a href="#">Privacy Policy</a></li>
+				{% if site.privacy %}
+				<li><a href="{{ site.privacy }}">Privacy Policy</a></li>
+				{% endif %}
 			</ul>
 		</div>
 	</div>

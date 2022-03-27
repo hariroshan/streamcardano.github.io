@@ -56,15 +56,26 @@ html_proofer:
   file_ignore:
     - /a.*regexp*/
     - a_string
+
+  include:
+  - _pages
+
 # links to channels
 discord: https://discord.gg/VRcs553q
 keybase: https://keybase.io/team/migamakeusers
 telegram: https://t.me/migamake7
+
+# footer pages
+terms: /terms
+privacy: /privacy
 
 # Collections
 collections:
   demo:
     output: true
     permalink: /demo/:path/
+  pages:
+    output: true
+    permalink: /:pages/:path/
 
 
