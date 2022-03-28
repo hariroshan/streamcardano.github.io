@@ -28,6 +28,8 @@ html, body{ height:100%; }
 .ftr-menu ul{float:right; padding-left:0; list-style-type:none; margin-bottom: 0;}
 .ftr-menu ul li{display:inline-block;}
 .ftr-menu ul li a{font-family: 'Roboto', sans-serif; font-style: normal; font-weight: 400; font-size: 15px; line-height: 18px; color: #F8F8F8;}
+.social-links a { width: 30px; height: 30px; font-size: 14px; line-height: 45px; color: #ffffff; display: inline-block; text-align: center; transition: all .2s ease-in-out; margin: 5px 5px;}
+.level-item { align-items: center; display: flex; flex-basis: auto; flex-grow: 0; flex-shrink: 0; justify-content: center;}
 
 .navbar-toggle {background-color: #000;}
 .navbar-toggle .icon-bar{background-color: #fff;}
