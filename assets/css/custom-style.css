@@ -79,6 +79,55 @@ ul.dropdown-menu li a i{ margin-right: 10px; }
 .add-box{background: #109949; border-radius: 16px 16px 0 0; position: relative; min-height: 259px;}
 .project-add { display: block; color: #fff; font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 33px; line-height: 40px; text-align: center; text-transform: capitalize; padding: 0 50px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); text-decoration:none; }
 .project-add:hover{text-decoration:none; color: #000;}
+.rounded {
+    overflow: hidden !important;
+}
+.rounded {
+    border-radius: 0 !important;
+}
+.rounded:not(.main),
+figure.rounded:not(.main) span.bg,
+figure.rounded:not(.main) img,
+.rounded:not(.main).overlay figcaption,
+.owl-carousel figure.rounded:not(.main) img,
+.owl-carousel .item>img,
+.google-map.rounded iframe {
+    border-radius: 0.2rem !important;
+}
+figure.main.rounded span.bg,
+figure.main.rounded img,
+.main.rounded.overlay figcaption {
+    border-top-left-radius: 0.2rem !important;
+    border-top-right-radius: 0.2rem !important;
+}
+.category .badge {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.badge {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    line-height: 1;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 0.025rem;
+    padding: 0.35rem 0.7rem 0.3rem;
+    background-color: #109949;
+}
+.badge:hover,
+.badge:focus {
+    color: var(--color-white);
+}
+.badge.bg-white {
+    color: #109949;
+}
+a.badge.bg-default:hover {
+    -webkit-box-shadow: var(--badge-hover-default);
+            box-shadow: var(--badge-hover-default)
+}
+.text-second {
+    color: #929eaa;
+}
 
 
 @media only screen and (max-device-width: 1024px){

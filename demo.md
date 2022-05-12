@@ -1,5 +1,5 @@
 ---
-title: Demo Test
+title: Demos
 layout: demo 
 permalink: "/demo"
 ---

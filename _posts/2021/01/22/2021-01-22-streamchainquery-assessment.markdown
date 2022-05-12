@@ -3,6 +3,7 @@ layout: post
 title:  "First Catalyst project submission"
 date:   2021-01-22 12:54:00 +0100
 categories: catalyst
+post_image: "/assets/images/news/post-header.png"
 ---
 Today we got our first Community Advisor Assessments.
 [We got a whopping 4.5 out of 5.0](https://cardano.ideascale.com/c/idea/383011)!
