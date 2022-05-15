@@ -2,7 +2,7 @@ docs_list_title: StreamCardano home page.
 docs:
 
 - title: News
-  url: /news
+  url: /news/
   icon: ico-news
 
 - title: Demos

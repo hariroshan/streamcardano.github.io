@@ -31,9 +31,12 @@ plugins:
   - jekyll-gist
   - jekyll-spaceship
   - jekyll-sitemap
-  #- jekyll-paginate
+  - jekyll-paginate
   - jekyll-feed
   - jekyll-responsive-image
+
+paginate: 5
+paginate_path: "/news/page:num/"
 
 remote_theme: pages-themes/hacker@v0.2.0
 #remote_theme:  Wiredcraft/carte
