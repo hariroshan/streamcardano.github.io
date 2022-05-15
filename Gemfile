@@ -11,6 +11,7 @@ gem "jekyll-gist"
 gem 'rake'
 gem 'html-proofer'
 gem 'jekyll-spaceship'
+gem 'jekyll-feed', '~> 0.15.1'
 
 group :jekyll_plugins do
   gem "kramdown-parser-gfm"
