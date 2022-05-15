@@ -33,7 +33,7 @@ plugins:
   - jekyll-sitemap
   #- jekyll-paginate
   - jekyll-feed
-  #- jekyll-image-size
+  - jekyll-responsive-image
 
 remote_theme: pages-themes/hacker@v0.2.0
 #remote_theme:  Wiredcraft/carte
@@ -83,5 +83,54 @@ collections:
   pages:
     output: true
     permalink: /:pages/:path/
+
+
+# Responsive images
+responsive_image:
+  # Path to the image template.
+  template: _includes/responsive-image.html
+
+  # Quality to use when resizing images.
+  default_quality: 90
+
+  # An array of resize configuration objects. Each object must contain at least
+  # a `width` value.
+  sizes:
+    - width: 20 
+      quality: 10
+    - width: 480  
+      quality: 80 
+    - width: 800
+      quality: 90
+    - width: 1400
+      quality: 90
+
+  # working with JPGs directly from digital cameras and smartphones
+  auto_rotate: false
+
+  # `dirname` value in `output_path_format` below.
+  base_path: assets/images
+
+  # Parameters available are:
+  #   %{dirname}     Directory of the file relative to `base_path` (assets/sub/dir/some-file.jpg => sub/dir)
+  #   %{basename}    Basename of the file (assets/some-file.jpg => some-file.jpg)
+  #   %{filename}    Basename without the extension (assets/some-file.jpg => some-file)
+  #   %{extension}   Extension of the file (assets/some-file.jpg => jpg)
+  #   %{width}       Width of the resized image
+  #   %{height}      Height of the resized image
+  #
+  output_path_format: assets/images/resized/%{width}/%{basename}
+
+  # Whether or not to save the generated assets into the source folder.
+  save_to_source: false
+
+  # tags. See the "Caching" section of the README for more information.
+  cache: false
+
+  # images. This is useful for resizing images which will be referenced from stylesheets.
+  extra_images:
+    - assets/foo/bar.png
+    - assets/bgs/*.png
+    - assets/avatars/*.{jpeg,jpg}
 
 

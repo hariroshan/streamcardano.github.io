@@ -12,6 +12,7 @@ gem 'rake'
 gem 'html-proofer'
 gem 'jekyll-spaceship'
 gem 'jekyll-feed', '~> 0.15.1'
+gem 'jekyll-responsive-image', '~> 1.4'
 
 group :jekyll_plugins do
   gem "kramdown-parser-gfm"
