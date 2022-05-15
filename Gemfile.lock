@@ -135,7 +135,7 @@ DEPENDENCIES
   jekyll-gist
   jekyll-responsive-image (~> 1.4)
   jekyll-sitemap
-  jekyll-spaceship
+  jekyll-spaceship (~> 0.10.2)
   kramdown-parser-gfm
   rake
   tzinfo-data

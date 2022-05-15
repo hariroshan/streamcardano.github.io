@@ -10,9 +10,9 @@ gem "jekyll-gist"
 # gem "kramdown-parser-gfm"
 gem 'rake'
 gem 'html-proofer'
-gem 'jekyll-spaceship'
 gem 'jekyll-feed', '~> 0.15.1'
 gem 'jekyll-responsive-image', '~> 1.4'
+gem 'jekyll-spaceship', '~> 0.10.2'
 
 group :jekyll_plugins do
   gem "kramdown-parser-gfm"

@@ -29,7 +29,7 @@ exclude:
 
 plugins:
   - jekyll-gist
-  #- jekyll-spaceship
+  - jekyll-spaceship
   - jekyll-sitemap
   #- jekyll-paginate
   - jekyll-feed
