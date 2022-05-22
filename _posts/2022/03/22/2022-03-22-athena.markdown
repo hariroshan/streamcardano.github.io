@@ -7,5 +7,5 @@ categories: partners
 
 [Athena team](https://youtu.be/DXuGpw6KyKI) wants to build on the StreamCardano platform.
 
-![Athena logo](/assets/images/athena-logo.png)
+![Athena logo](/assets/images/partners/athena-logo.png)
 
