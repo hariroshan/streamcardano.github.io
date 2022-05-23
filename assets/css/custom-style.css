@@ -150,6 +150,10 @@ a.badge.bg-default:hover {
     opacity: 1;
 }
 
+.img-center {
+    display: inline !important;
+}
+
 
 @media only screen and (max-device-width: 1024px){
 
