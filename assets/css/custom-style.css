@@ -150,8 +150,11 @@ a.badge.bg-default:hover {
     opacity: 1;
 }
 
-.img-center {
+.img-center-post {
     display: inline !important;
+}
+.ml {
+    margin-left: 4px;
 }
 
 
