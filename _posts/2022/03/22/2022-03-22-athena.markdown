@@ -3,9 +3,9 @@ layout: post
 title:  "Athena"
 date:   2022-03-22 15:00:00 +0100
 categories: partners
+post_image: '/assets/images/partners/athena-logo.png'
 ---
 
 [Athena team](https://youtu.be/DXuGpw6KyKI) wants to build on the StreamCardano platform.
 
-![Athena logo](/assets/images/partners/athena-logo.png)
 

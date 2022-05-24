@@ -3,11 +3,10 @@ layout: post
 title:  "CyberTech++"
 date:   2022-05-22 15:00:00 +0100
 categories: partners
+post_image: '/assets/images/partners/CYberTechClear-logo.png'
 ---
 
 [Cybertech++](https://cybertechpp.io/) wants to build on the StreamCardano platform.
-
-![CyberTech++ logo](/assets/images/partners/CYberTechClear-logo.png) {.width=50%}
 
 [CyberTech++](https://mocossiland.cybertechpp.io/) is providing advanced analytical data, tools, and charts for top level Cardano NFT Projects.
 Their goal is not to support every CNFT project, but only those that the community has shown an interest in.
