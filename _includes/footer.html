@@ -3,7 +3,7 @@
 	<div class="container">
 	
 		<div class="col-xs-12 col-sm-4 col-md-4 copyright pL0">
-			<p>© 2022 Migamake Pte Ltd. All rights reserved | <a target="_blank" href="https://www.migamake.com"><img width="40" src="/assets/images/migamake-logo-white.png"/></a></p>
+			<p><a target="_blank" href="https://www.migamake.com"><img width="40" src="/assets/images/migamake-logo-white.png"/></a>© 2022 Migamake Pte Ltd. All rights reserved</p>
 		</div>
 		
 		<div class="col-xs-12 col-sm-4 col-md-4 ftr-social">
@@ -21,7 +21,7 @@
 				{% if site.terms %}
 				<li><a href="{{ site.terms }}">Terms & conditions</a></li>
 				{% endif %}
-				<li><a>|</a></li>
+				<li><a>&nbsp;</a></li>
 				{% if site.privacy %}
 				<li><a href="{{ site.privacy }}">Privacy policy</a></li>
 				{% endif %}
@@ -32,3 +32,24 @@
 </footer>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
 <script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
+<script>
+
+	$(document).ready(function() {
+		if (!window.matchMedia)
+			return;
+	
+		var current = $('head > link[rel="icon"][media]');
+		$.each(current, function(i, icon) {
+			var match = window.matchMedia(icon.media);
+			function swap() {
+				if (match.matches) {
+					current.remove();
+					current = $(icon).appendTo('head');
+				}
+			}
+			match.addListener(swap);
+			swap();
+		});
+	});
+
+</script>
