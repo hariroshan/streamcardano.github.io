@@ -13,10 +13,11 @@ html, body{ height:100%; }
 .nav>li>a:hover, .nav>li>a:focus { text-decoration: none; background-color: transparent;}
 .navbar-toggle {background-color: #000;}
 .navbar-toggle .icon-bar{background-color: #fff;}
-.ico-home{background-image: url(../images/home.png); background-repeat: no-repeat; width: 19px; height: 18px; display: inline-block; margin-right: 10px; position: relative; top: 2px;}
-.ico-news{background-image: url(../images/news.png); background-repeat: no-repeat; width: 20px; height: 20px; display: inline-block; margin-right: 10px; position: relative; top: 6px;}
-.ico-exm{background-image: url(../images/exmpl.png); background-repeat: no-repeat; width: 19px; height: 18px; display: inline-block; margin-right: 10px; position: relative; top: 6px;}
-.ico-doc{background-image: url(../images/doc.png); background-repeat: no-repeat; width: 19px; height: 19px; display: inline-block; margin-right: 10px; position: relative; top: 6px;}
+.ico-home{background-image: url(../images/icons/home.svg); background-repeat: no-repeat; width: 19px; height: 18px; display: inline-block; margin-right: 10px; position: relative; top: 2px;}
+.ico-news{background-image: url(../images/icons/news.svg); background-repeat: no-repeat; width: 20px; height: 20px; display: inline-block; margin-right: 10px; position: relative; top: 6px;}
+.ico-exm{background-image: url(../images/icons/demos.svg); background-repeat: no-repeat; width: 19px; height: 18px; display: inline-block; margin-right: 10px; position: relative; top: 6px;}
+.ico-doc{background-image: url(../images/icons/docs.svg); background-repeat: no-repeat; width: 19px; height: 19px; display: inline-block; margin-right: 10px; position: relative; top: 6px;}
+.ico-logo{background-image: url(../images/Streamcardano-logo.svg); background-repeat: no-repeat; width: 205px; height: 66px; display: inline-block; position: relative;}
 .btn-brdr{font-weight: 500 !important; border: 1px solid #000000; border-radius: 20px; margin:5px 20px 0 0 !important;}
 .btn-brdr a{padding:6px 25px !important; font-weight: 500 !important; color:#606060 !important;}
 .btn-brdr:hover{ border-color:#109949;}
@@ -39,7 +40,7 @@ ul.dropdown-menu li a i{ margin-right: 10px; }
 .navbar li a:hover, .navbar li.active a { color: #109949; }
 .navbar li a:hover i, .navbar li.active a>i { filter: grayscale(0.5); }
 
-.welcome-section{float:left; width:100%; padding:130px 0 40px;}
+.welcome-section{float:left; width:100%; padding:130px 0 40px; margin-bottom: 130px;}
 .text-box{padding:140px 0 140px; text-align:center; background-image:url(../images/cardano-home.png); background-repeat: no-repeat; background-position: center center; background-size: contain;}
 .text-box h4{font-family: 'Roboto', sans-serif; font-style: normal; font-weight: 500; font-size: 13px; line-height: 15px; text-transform: uppercase; color: #109948; margin-bottom: 0; margin-top: 0;}
 .text-box h1{font-family: 'Roboto', sans-serif; font-style: normal; font-weight: 700; font-size: 52px; line-height: 61px; text-transform: uppercase; color: #000000; margin-top: 15px; margin-bottom: 5px;}
@@ -186,6 +187,7 @@ a.badge.bg-default:hover {
     .navbar-nav>li>a {padding-top: 10px;padding-bottom: 10px; }
     .collapse.in{ display:block !important; }
     .navbar-right .dropdown-menu { right: auto; left: 0;}
+    .welcome-section { height: auto; margin-bottom: 130px;}
     
     }
 
@@ -208,6 +210,7 @@ a.badge.bg-default:hover {
 .navbar-right .dropdown-menu { right: auto; left: 0;}
 .ftr-social ul li { margin-left: 0px; }
 .ftr-menu ul li {line-height: 22px; }
+.text-box h1 {font-size: 40px;}
   
 }
 
@@ -215,6 +218,10 @@ a.badge.bg-default:hover {
 
 .navbar-left { margin: 0; margin-left: 4px;}	
 .navbar-left li { margin: 0; }
+.text-box {padding: 70px 0 75px;}
+.text-box h1 {font-size: 40px;}
+.welcome-section { height: auto; margin-bottom: 130px;}
+
 
 .btn-brdr{display:inline-block !important; margin:20px 20px 0 20px !important;}
 .btn-fill{display:inline-block !important; margin-top: 20px !important;}
@@ -229,6 +236,7 @@ ul.dropdown-menu { background: #444444 !important;}
 
 @media only screen and (max-device-width: 767px) and (orientation: landscape){
 	
-.welcome-section { height: auto; }
+.welcome-section { height: auto; margin-bottom: 130px;}
+.text-box h1 {font-size: 40px;}
 
 }
