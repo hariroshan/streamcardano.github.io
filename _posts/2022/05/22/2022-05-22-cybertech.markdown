@@ -2,7 +2,7 @@
 layout: post
 title:  "CyberTech++"
 date:   2022-05-22 15:00:00 +0100
-categories: partners
+categories: [partners, news]
 post_image: '/assets/images/partners/CYberTechClear-logo.png'
 ---
 
