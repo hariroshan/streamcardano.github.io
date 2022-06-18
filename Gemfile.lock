@@ -140,6 +140,7 @@ DEPENDENCIES
   jekyll-spaceship (~> 0.10.2)
   kramdown-parser-gfm
   rake
+  rouge (~> 3.28)
   tzinfo-data
   wdm (>= 0.1.0)
   webrick (~> 1.7)

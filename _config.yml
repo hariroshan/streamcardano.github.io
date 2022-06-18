@@ -23,6 +23,10 @@ permalink: /:categories/:year/:month/:day/:title
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+input: GFM
 exclude:
   - "README.md"
   - "vendor"
