@@ -1,5 +1,22 @@
+---
+title: "Static landing page for StreamCardano.com."
+---
+
 ![Build Status](https://gitlab.com/pages/jekyll/badges/master/build.svg)
 ![Jekyll Version](https://img.shields.io/gem/v/jekyll.svg)
+
+To build locally, you need to install dependencies:
+```
+# ImageMagick
+sudo apt-get install imagemagick libmagickcore-dev libmagickwand-dev
+# Bundler
+sudo apt-get install ruby-bundler
+```
+
+To serve locally:
+```sh
+bundle exec -- jekyll serve
+```
 
 ---
 
