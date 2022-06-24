@@ -75,8 +75,10 @@ linkedin: https://www.linkedin.com/company/migamake/about/
 calendly: https://calendly.com/mjgajda/mchat
 
 # footer pages
-terms: /terms
-privacy: /privacy
+terms: false
+privacy: false
+#terms: /terms
+#privacy: /privacy
 
 # Collections
 collections:
