@@ -2,36 +2,65 @@
 layout: default
 ---
 
-  
-<div class="wrapper light-wrapper">
-  <div class="container inner pt-80">
-    <div class="row">
-      <div class="col-lg-10 mx-auto">
-        <div class="blog classic-view">
-          <div class="post mb-0">
-            {% if page.post_image %}
-            <figure class="rounded text-center">
-              <img class = "img-responsive mx-auto img-center"src="{{page.post_image}}" alt="{{page.title}}"/>
-            </figure>
-            {% endif %}
-            <div class="space40"></div>
-            <div class="post-content text-center">
-              {% if page.categories %}
-              <div class="category text-center">
-                <a href="#" class="badge badge-pill bg-hibiscus">{{page.categories[0]}}</a>
-              </div>
-              {% endif %}
-              <h2 class="post-title text-center">{{page.title}}</h2>
-              <div class="meta text-center">
-                {% if page.date %}
-                 <span class="date text-second"><i class="jam jam-clock"></i>{{page.date | date_to_string}}</span>
-                {% endif %}
-                {% if page.author %}
-                 <span class="author"><i class="jam jam-user"></i><a href="/author/{{page.author | slugify}}">By {{page.author}}</a></span>
-                {% endif %}
-              </div>
-               {{page.content}}
-              {% if page.post_format == "gallery" %}
+
+<div class="tw__relative tw__bg-white tw__py-16 sm:tw__py-24">
+  <div
+    class="lg:tw__mx-auto lg:tw__grid lg:tw__max-w-7xl lg:tw__grid-cols-2 lg:tw__items-start lg:tw__gap-24 lg:tw__px-8">
+
+    {% if page.post_image %}
+    <div class="tw__relative sm:tw__py-16 lg:tw__py-0">
+      <div
+        class="tw__relative tw__mx-auto tw__max-w-md tw__px-4 sm:tw__max-w-3xl sm:tw__px-6 lg:tw__max-w-none lg:tw__px-0 lg:tw__py-20">
+        <!-- Post image -->
+        <figure class="tw__relative tw__overflow-hidden tw__rounded-2xl tw__pt-64 tw__pb-10 tw__shadow-xl">
+          <img class="tw__absolute tw__absolute_center tw__w-11/12" src="{{ page.post_image }}" alt="{{ page.title }}">
+        </figure>
+      </div>
+    </div>
+    {% endif %}
+
+
+    <div class="tw__relative tw__mx-auto tw__max-w-md tw__px-4 sm:tw__max-w-3xl sm:tw__px-6 lg:tw__px-0">
+      <!-- Content area -->
+      <div class="tw__pt-12 sm:tw__pt-16 lg:tw__pt-20">
+        {% if page.categories %}
+        <div class="category text-center">
+          <a href="#">
+            <span class="tw__rounded-lg tw__px-2 tw__py-1 tw__text-xs tw__bg-gray-200 tw__uppercase tw__font-bold tw__text-primary-700">
+              {{ page.categories[0] }}
+            </span>
+          </a>
+        </div>
+        {% endif %}
+        <h2 class="tw__text-3xl tw__font-bold tw__tracking-tight tw__text-gray-900 sm:tw__text-4xl">{{ page.title }}
+        </h2>
+
+        {% if page.date %}
+        <p class="tw__text-sm tw__text-gray-500">
+          <time datetime='{{ page.date | date: "%Y-%M-%D" }}'>{{ page.date | date_to_string }}</time>
+        </p>
+        {% endif %}
+
+        {% if page.author %}
+        <span class="tw__capitalize">
+          <a href="/author/{{page.author | slugify}}">By
+            {{page.author}}</a>
+        </span>
+        {% endif %}
+
+        <!-- Page Content -->
+        <div class="tw__mt-6 tw__space-y-6 tw__text-gray-500">
+          <p class="tw__text-lg">
+            {{page.content}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 
+{% if page.post_format == "gallery" %}
               <div class="space20"></div>
               <div class="post-gallery light-gallery-wrapper">
                 <div class="tiles tiles-s">
@@ -40,48 +69,29 @@ layout: default
                     <div class="item {% if forloop.index < 3 %} col-md-6 {% else %} col-md-4 {% endif %}">
                       <figure class="overlay overlay1 rounded">
                         <a href="{{gallery.img}}" class="lightbox">
-                        <img src="{{gallery.img}}" alt="{{gallery.img}}"></a>
+                          <img src="{{gallery.img}}" alt="{{gallery.img}}"></a>
                         <figcaption>
                           <h5 class="from-top mb-0">View Larger</h5>
                         </figcaption>
                       </figure>
                     </div>
-                    <!--/.item -->
                     {% endfor %}
                   </div>
-                  <!--/.items -->
                 </div>
-                <!--/.tiles -->
               </div>
-              <!--/.post-gallery -->
-              {% endif %}
-              <div class="clearfix"></div>
-              <div class="space40"></div>
-              <div class="space10"></div>
-              <div class="d-lg-flex justify-content-between align-items-center meta-footer">
-                 <ul class="list-unstyled tag-list">
-                    {% capture tags %}
-                      {% for tag in page.tags %}
-                        <li data-sort="{{ site.posts.size | minus: tag[1].size | prepend: '0000' | slice: -4, 4 }}">
-                           <a class="btn btn-s" href="/tag/{{tag |slugify}}">{{ tag }}</a>
-                        </li>
-                      {% endfor %}
-                    {% endcapture %}
-                    {{ tags | split:'</li>' | sort | join:'</li>' }}
-                </ul>
-                <div class="space20 d-lg-none"></div>
-              </div>
-            </div>
-            <!-- /.post-content -->
-          </div>
-          <!-- /.post -->
-        </div>
-        <!-- /.blog -->
-      </div>
-      <!-- /column -->
-    </div>
-    <!-- /.row -->
-  </div>
-  <!-- /.container -->
+{% endif %}
+
+<div class="d-lg-flex justify-content-between align-items-center meta-footer">
+  <ul class="list-unstyled tag-list">
+    {% capture tags %}
+    {% for tag in page.tags %}
+    <li data-sort="{{ site.posts.size | minus: tag[1].size | prepend: '0000' | slice: -4, 4 }}">
+      <a class="btn btn-s" href="/tag/{{tag |slugify}}">{{ tag }}</a>
+    </li>
+    {% endfor %}
+    {% endcapture %}
+    {{ tags | split:'</li>' | sort | join:'</li>' }}
+  </ul>
+  <div class="space20 d-lg-none"></div>
 </div>
-<!-- /.wrapper -->
+-->
