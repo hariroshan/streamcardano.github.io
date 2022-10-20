@@ -2,25 +2,25 @@ docs_list_title: StreamCardano home page.
 docs:
 
 - title: News
-  url: /news/
-  icon: ico-news
-
-- title: Demos
-  url: /demo
-  icon: ico-exm
+  url: /news
+  class: "tw__button tw__clear"
 
 - title: Partners
   url: /partners
-  icon: ico-exm
+  class: "tw__button tw__clear"
+
+- title: Demos
+  url: /demo
+  class: "tw__button tw__clear"
 
 - title: Docs
   url: https://docs-beta.streamcardano.dev
-  icon: ico-doc
+  class: "tw__button tw__clear"
 
-- title: App Login
+- title: Login
   url: /in-progress
-  class: btn-brdr
+  class: "tw__button tw__clear"
 
 - title: Signup
   url: /in-progress
-  class: btn-fill
+  class: "tw__button"

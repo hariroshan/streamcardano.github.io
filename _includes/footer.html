@@ -34,25 +34,4 @@
 	</div>
 </footer>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-<script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
-<script>
-
-	$(document).ready(function() {
-		if (!window.matchMedia)
-			return;
-	
-		var current = $('head > link[rel="icon"][media]');
-		$.each(current, function(i, icon) {
-			var match = window.matchMedia(icon.media);
-			function swap() {
-				if (match.matches) {
-					current.remove();
-					current = $(icon).appendTo('head');
-				}
-			}
-			match.addListener(swap);
-			swap();
-		});
-	});
-
-</script>
+<script src="{{site.baseurl}}/assets/js/index.js"></script>
