@@ -15,4 +15,21 @@ $(document).ready(function () {
         match.addListener(swap);
         swap();
     });
+
+    /*  
+     * Toggles the menu
+     * TODO: Convert it to JQuery
+     */
+
+    const burgerButton = document.getElementById("hamburger")
+    const menu = document.getElementById("small-menu")
+    const listener = _ => {
+        menu.classList.toggle("tw__hidden")
+        Array.from(burgerButton.getElementsByClassName("nav"))
+            .forEach(el => el.classList.toggle("tw__hidden"))
+    }
+
+    burgerButton.addEventListener("click", listener)
+    menu.addEventListener("click", listener)
+
 });
