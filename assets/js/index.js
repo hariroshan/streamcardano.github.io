@@ -29,7 +29,7 @@ $(document).ready(function () {
             .forEach(el => el.classList.toggle("tw__hidden"))
     }
 
-    burgerButton.addEventListener("click", listener)
-    menu.addEventListener("click", listener)
+    burgerButton?.addEventListener("click", listener)
+    menu?.addEventListener("click", listener)
 
 });

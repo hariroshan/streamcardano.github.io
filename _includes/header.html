@@ -1,4 +1,4 @@
-<header class="header-section navbar-fixed-top">
+<!-- <header class="header-section navbar-fixed-top">
 	<nav class="navbar">
 	  <div class="container">
 		
@@ -27,5 +27,70 @@
 		  </ul>
 		</div>
 	  </div>
+	</nav>
+</header> -->
+<header>
+	<nav>
+		<div
+			class="tw__mx-auto tw__max-w-7xl tw__px-4 sm:tw__px-6 lg:tw__px-8 tw__relative tw__z-50 tw__flex tw__justify-between tw__py-8">
+			<div class="tw__relative tw__z-10 tw__flex tw__items-center tw__gap-16">
+				<a aria-label="Home" href="/">
+					<img class="tw__h-10 tw__w-auto tw__flex-none" src="{{ site.logo }}" alt="{{ site.title }}">
+				</a>
+				{% if page.url == "/" %}
+					<div class="tw__hidden lg:tw__flex lg:tw__gap-10">
+						<a class="tw__button tw__clear" href="{{ site.baseurl }}#features">
+							<span class="tw__relative tw__z-10">Features</span>
+						</a>
+						<a class="tw__button tw__clear" href="{{ site.baseurl }}#contact">
+							<span class="tw__relative tw__z-10">Contact Us</span>
+						</a>
+					</div>
+				{% endif %}
+			</div>
+			<div class="tw__flex tw__items-center tw__gap-6">
+				<div class="lg:tw__hidden">
+					<button id="hamburger"
+						class="tw__relative tw__z-10 tw__-m-2 tw__inline-flex tw__items-center tw__rounded-lg tw__p-2 tw__stroke-primary-500 hover:tw__bg-gray-200/50 hover:tw__stroke-primary-600 active:tw__stroke-primary-800 [&:not(:focus-visible)]:focus:tw__outline-none"
+						aria-label="Toggle site navigation" type="button" aria-expanded="false">
+						<svg viewBox="0 0 24 24" fill="none" aria-hidden="true" class="nav tw__h-6 tw__w-6">
+							<path d="M5 6h14M5 18h14M5 12h14" stroke-width="2" stroke-linecap="round"
+								stroke-linejoin="round"></path>
+						</svg>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+							aria-hidden="true" class="nav tw__h-6 tw__w-6 tw__hidden">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+						</svg>
+					</button>
+					<div id="small-menu" class="tw__hidden">
+						<div class="tw__fixed tw__inset-0 tw__z-0 tw__bg-gray-300/60 tw__backdrop-blur"></div>
+						<div
+							class="tw__absolute tw__inset-x-0 tw__top-0 tw__z-0 tw__origin-top tw__rounded-b-2xl tw__bg-gray-50 tw__px-6 tw__pb-6 tw__pt-32 tw__shadow-2xl tw__shadow-gray-900/20">
+							{% if page.url == "/" %}
+								<div class="tw__space-y-4">
+									<a class="tw__button tw__clear" href="{{ site.baseurl }}#features">Features</a>
+									<a class="tw__button tw__clear" href="{{ site.baseurl }}#contact">Contact Us</a>
+								</div>
+							{% endif %}
+							<ul
+								class="tw__mt-8 tw__flex tw__flex-col tw__gap-4 tw__border-t tw__border-gray-200 tw__pt-2">
+								{% for item in site.data.manu.docs %}
+									<li>
+										<a class="{{ item.class }}" href="{{ item.url }}">{{item.title}}</a>
+									</li>
+								{% endfor %}
+							</ul>
+						</div>
+					</div>
+				</div>
+				<ul class="tw__hidden lg:tw__flex lg:tw__items-center lg:tw__space-x-4">
+					{% for item in site.data.manu.docs %}
+						<li>
+							<a class="{{ item.class }}" href="{{ item.url }}">{{item.title}}</a>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
 	</nav>
 </header>

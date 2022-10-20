@@ -1,37 +1,3 @@
-<!-- <footer class="footer-section navbar-fixed-bottom">
-	<div class="container">
-	
-		<div class="col-xs-12 col-sm-4 col-md-4 copyright pL0">
-			<p><a target="_blank" href="https://www.migamake.com"><img width="40" src="/assets/images/migamake-logo-white.png"/></a>© 2022 Migamake Pte Ltd. All rights reserved</p>
-		</div>
-		
-		<div class="col-xs-12 col-sm-4 col-md-4 ftr-social">
-			<ul>
-				<li><a href="{{ site.discord }}" target="_blank"><img src="{{ site.baseurl }}/assets/images/discord.png"/></a></li>
-				<li><a href="{{ site.keybase }}" target="_blank"><img src="{{ site.baseurl }}/assets/images/keybase.png"/></a></li>
-				<li><a href="{{ site.telegram }}" target="_blank"><img src="{{ site.baseurl }}/assets/images/telegram.png"/></a></li>
-                <li><a href="{{ site.calendly }}"><img src="{{ site.baseurl }}/assets/images/calendly.png"/></a></li>
-                <li><a href="mailto:{{ site.email }}"><img src="{{ site.baseurl }}/assets/images/email.png"/></a></li>
-			</ul>
-		</div>
-		
-		<div class="col-xs-12 col-sm-4 col-md-4 ftr-menu pR0">
-			<ul>
-				{% if site.terms %}
-				<li><a href="{{ site.terms }}">Terms & conditions</a></li>
-				{% endif %}
-				<li><a>&nbsp;</a></li>
-				{% if site.privacy %}
-				<li><a href="{{ site.privacy }}">Privacy policy</a></li>
-				{% endif %}
-                                <li>
-                                  <a href="https://status.streamcardano.com/" target="_blank"><img src="https://statuspage.freshping.io/badge/ddaf17f3-7ca3-4001-8db3-632852a6894d?0.04162305879133732"/> </a>
-                                </li>
-			</ul>
-		</div>
-		
-	</div>
-</footer>  -->
 <footer class="tw__border-t tw__border-gray-200 tw__bg-gray-50">
 	<div class="tw__mx-auto tw__max-w-screen-2xl tw__px-4 sm:tw__px-6 lg:tw__px-8">
 		<div
@@ -39,12 +5,11 @@
 			<div class="lg:tw__w-full lg:tw__flex lg:tw__justify-between lg:tw__items-center">
 				<div class="tw__flex tw__items-center tw__text-gray-900">
 					<img class="tw__h-12 tw__w-12 tw__flex-none" style="max-width: 3rem;"
-						src="{{ site.baseurl }}/assets/images/logo_small.svg" alt="Stream Cardano">
+						src="{{ site.logo_small }}" alt="{{ site.title }}">
 
 					<div class="tw__ml-4">
-						<p class="tw__text-base tw__font-semibold">Stream Cardano</p>
-						<p class="tw__mt-1 tw__text-sm">Serverless software-as-a-service for building dApps as pure
-							frontends and smart contracts.</p>
+						<p class="tw__text-base tw__font-semibold">{{ site.title }}</p>
+						<p class="tw__mt-1 tw__text-sm">{{ site.short_description }}</p>
 					</div>
 				</div>
 				<ul class="tw__my-4 tw__flex tw__justify-center md:tw__justify-start tw__items-center tw__gap-2 tw__flex-wrap">
