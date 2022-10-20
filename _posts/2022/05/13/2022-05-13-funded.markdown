@@ -3,13 +3,12 @@ layout: post
 title:  "StreamCardano.com funded by Catalyst"
 date:   2022-05-13 15:00:00 +0100
 categories: news
-post_image: "/assets/images/streamcardano-logo.png"
+post_image: "/assets/images/logo_h.svg"
 ---
 
 We start [StreamCardano](https://www.streamcardano.com) project.
-[Catalyst Fund8](https://drive.google.com/file/d/1s3jCE7pmoUujy3ASMia-UhFl2KLi_hnf/view) will fund the project for the first year with 239k$ in ADA.
+[Catalyst Fund8](https://drive.google.com/file/d/1s3jCE7pmoUujy3ASMia-UhFl2KLi_hnf/view) will fund the project for the first year with <span class="tw__font-bold tw__font-mono tw__text-green-600">$239,000</span> in ADA.
 
 We currently work on a prototype for a [platform for serverless hosting of Cardano dApps](https://cardano.ideascale.com/c/idea/396549)!
 
 If you develop a Cardano dApp, [please contact us to enter closed beta](mailto:streamcardano@migamake.com).
-

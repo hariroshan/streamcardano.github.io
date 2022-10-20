@@ -7,5 +7,3 @@ post_image: '/assets/images/partners/athena-logo.png'
 ---
 
 [Athena team](https://youtu.be/DXuGpw6KyKI) wants to build on the StreamCardano platform.
-
-
