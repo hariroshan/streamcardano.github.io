@@ -23,6 +23,9 @@
     .tw__centerXY {
         @apply tw__flex tw__items-center tw__justify-center;
     }
+    .tw__absolute_center {
+      @apply tw__top-1/2 tw__left-1/2 tw__transform tw__-translate-x-1/2 tw__-translate-y-1/2;
+    }
     .tw__button {
         @apply tw__space-x-2 tw__flex tw__items-center tw__justify-center tw__rounded-md tw__border tw__border-transparent tw__text-sm tw__font-medium focus:tw__outline-none focus:tw__ring-2 focus:tw__ring-primary-500 focus:tw__ring-offset-2;
     }
@@ -35,7 +38,10 @@
     .tw__button.tw__medium{
         @apply tw__py-3 tw__px-5 tw__text-base;
     }
+    a {
+      @apply tw__text-primary-300 hover:tw__text-primary-600;
+    }
     .tw__link {
-        @apply tw__text-primary-300 hover:tw__text-primary-600;
+      @apply tw__text-primary-300 hover:tw__text-primary-600;
     }
 }
