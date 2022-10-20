@@ -4,8 +4,9 @@ module.exports = {
     content: [
       './_includes/**/*.html',
       './_layouts/**/*.html',
-      './_posts/*.md',
+      './_posts/**/*.(markdown|md)',
       './*.html',
+      './news/*.html',
     ],    
     prefix: 'tw__',
     darkMode: 'class',
