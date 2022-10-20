@@ -1,5 +1,4 @@
-
-<footer class="footer-section navbar-fixed-bottom">
+<!-- <footer class="footer-section navbar-fixed-bottom">
 	<div class="container">
 	
 		<div class="col-xs-12 col-sm-4 col-md-4 copyright pL0">
@@ -32,6 +31,74 @@
 		</div>
 		
 	</div>
+</footer>  -->
+<footer class="tw__border-t tw__border-gray-200 tw__bg-gray-50">
+	<div class="tw__mx-auto tw__max-w-screen-2xl tw__px-4 sm:tw__px-6 lg:tw__px-8">
+		<div
+			class="tw__flex tw__flex-col tw__items-start tw__justify-between tw__gap-y-12 tw__pt-16 tw__pb-6 lg:tw__flex-row lg:tw__items-center lg:tw__py-16">
+			<div class="lg:tw__w-full lg:tw__flex lg:tw__justify-between lg:tw__items-center">
+				<div class="tw__flex tw__items-center tw__text-gray-900">
+					<img class="tw__h-12 tw__w-12 tw__flex-none" style="max-width: 3rem;"
+						src="{{ site.baseurl }}/assets/images/logo_small.svg" alt="Stream Cardano">
+
+					<div class="tw__ml-4">
+						<p class="tw__text-base tw__font-semibold">Stream Cardano</p>
+						<p class="tw__mt-1 tw__text-sm">Serverless software-as-a-service for building dApps as pure
+							frontends and smart contracts.</p>
+					</div>
+				</div>
+				<ul class="tw__my-4 tw__flex tw__justify-center md:tw__justify-start tw__items-center tw__gap-2 tw__flex-wrap">
+					<li><a href="{{ site.discord }}" target="_blank" rel="noopener noreferrer">
+							<img class="tw__h-10" alt="Discord" src="{{ site.baseurl }}/assets/images/discord_logo.svg"/>
+						</a>
+					</li>
+					<li><a href="{{ site.keybase }}" target="_blank" rel="noopener noreferrer">
+							<img class="tw__h-10" alt="Keybase" src="{{ site.baseurl }}/assets/images/keybase_logo.svg"/>
+						</a>
+					</li>
+					<li><a href="{{ site.telegram }}" target="_blank" rel="noopener noreferrer">
+							<img class="tw__h-10" alt="Telegram" src="{{ site.baseurl }}/assets/images/telegram_logo.svg"/>
+						</a>
+					</li>
+					<li><a href="{{ site.calanderly }}" target="_blank" rel="noopener noreferrer">
+							<img class="tw__h-10" alt="Calenderly" src="{{ site.baseurl }}/assets/images/calendly_logo.svg"/>
+						</a>
+					</li>
+					<li><a href="{{ site.email_stream_cardano }}">
+							<img class="tw__h-10" alt="Email" src="{{ site.baseurl }}/assets/images/email_logo.svg"/>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div
+			class="tw__border-t tw__border-gray-200 tw__pt-8 tw__pb-12 md:tw__pt-6 md:tw__flex md:tw__justify-between">
+			<div class="tw__centerXY tw__py-2">
+				<a href="https://status.streamcardano.com/" target="_blank"><img src="https://statuspage.freshping.io/badge/ddaf17f3-7ca3-4001-8db3-632852a6894d?0.04162305879133732"/> </a>
+			</div>
+			<ul class="tw__text-center md:tw__text-left tw__text-sm md:tw__flex md:tw__items-center md:tw__gap-2">
+				{% if site.terms %}
+					<li><a class="tw__link" href="{{ site.terms }}">Terms & Condition</a></li>
+				{% endif %}
+				{% if site.privacy %}
+					<li class="tw__text-gray-200 tw__hidden md:tw__inline-block">|</li>
+					<li><a class="tw__link" href="{{ site.privacy }}">Privacy Policy</a></li>
+				{% endif %}
+			</ul>
+			
+			<p class="tw__mt-6 tw__text-sm tw__text-gray-500 md:tw__mt-0 tw__flex-wrap tw__centerXY tw__gap-2">
+				<span> © Copyright 2022. </span>
+				<span> All rights reserved.</span>
+				<span> Powered by </span>
+				<a class="tw__link tw__centerXY tw__space-x-2" href="https://migamake.com/" target="_blank"
+					rel="noopener noreferrer">
+					<img class="tw__h-10" src="{{ site.baseurl }}/assets/images/migamake_logo_dark.png"
+						alt="Migamake Logo">
+					<span>Migamake</span>
+				</a>
+			</p>
+		</div>
+	</div>
 </footer>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-<script src="{{site.baseurl}}/assets/js/index.js"></script>
+<script src="{{ site.baseurl }}/assets/js/index.js"></script>
