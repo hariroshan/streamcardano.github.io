@@ -1,13 +1,279 @@
 ---
-layout: default
+layout: home
 ---
 
-	<div class="container">
-		<div class="col-xs-12 text-box">
-			<h4>Welcome To</h4>
-			<h1>StreamCardano</h1>
-			<p>{{ site.description }}</p>
+<main>
+	<!-- Hero Block -->
+	<section class="tw__overflow-hidden tw__py-20 sm:tw__py-32 lg:tw__pb-32 xl:tw__pb-36">
+		<div class="tw__mx-auto tw__max-w-7xl tw__px-4 sm:tw__px-6 lg:tw__px-8">
+			<!-- tw__transform tw__-translate-y-1/4 -->
+			<div class="lg:tw__grid lg:tw__grid-cols-12 lg:tw__gap-8">
+				<div class="sm:tw__text-center md:tw__mx-auto md:tw__max-w-2xl lg:tw__col-span-6 lg:tw__text-left">
+					<h1>
+						<span
+							class="tw__mt-1 tw__block tw__text-center lg:tw__text-left tw__font-bold tw__tracking-tight sm:tw__text-5xl xl:tw__text-6xl">
+							<span class="tw__block tw__text-3xl md:tw__text-4xl tw__text-primary-700">Efficient
+								blockchain querying with </span>
+							<span class="tw__block tw__mt-2 tw__text-2xl md:tw__text-3xl tw__text-blue-700">
+								Result streaming,
+								Webhooks, and wallet scripts</span>
+						</span>
+					</h1>
+					<p
+						class="tw__mt-3 tw__text-base tw__text-gray-500 sm:tw__mt-5 sm:tw__text-xl lg:tw__text-lg xl:tw__text-xl">
+						Serverless software-as-a-service for building dApps as pure frontends and smart contracts.
+						Decreases the cost of entry and maintenance.</p>
+					<div
+						class="tw__mt-8 sm:tw__mx-auto sm:tw__max-w-lg sm:tw__text-center lg:tw__mx-0 lg:tw__text-left">
+						<p
+							class="tw__text-base tw__font-medium tw__text-gray-500 tw__flex tw__justify-between tw__items-center tw__flex-wrap">
+							Sign up to get started <a class="tw__button tw__max-w-xs" href="/app/signup">Sign Up</a>
+						</p>
+						<p class="tw__mt-3 tw__text-sm tw__text-gray-500">
+							We care about the protection of your data.
+						</p>
+					</div>
+				</div>
+				<div
+					class="tw__relative tw__mt-12 sm:tw__mx-auto sm:tw__max-w-lg lg:tw__col-span-6 lg:tw__mx-0 lg:tw__mt-0 lg:tw__flex lg:tw__max-w-none lg:tw__items-center">
+					<div class="tw__relative tw__mx-auto tw__w-full tw__rounded-lg lg:tw__max-w-md">
+						<img class="tw__w-full" src="{{ site.baseurl }}/assets/images/hero.svg" alt="Cardano Blockchain" />
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
+	</section>
+	<!-- Partners -->
+	<section id="partners" class="tw__bg-gray-100">
+		<div class="tw__mx-auto tw__max-w-7xl tw__py-16 tw__px-4 sm:tw__py-20 sm:tw__px-6 lg:tw__px-8">
+			<h2 class="tw__text-3xl tw__font-bold tw__tracking-tight tw__text-gray-500">Our Trusted Partners</h2>
+			<div class="tw__mt-8 tw__flow-root lg:tw__mt-10">
+				<div class="tw__-mt-4 tw__-ml-8 tw__flex tw__flex-wrap tw__justify-between lg:tw__-ml-4">
+					<div
+						class="tw__mt-4 tw__ml-8 tw__flex tw__flex-shrink-0 tw__flex-grow lg:tw__ml-4 lg:tw__flex-grow-0">
+						<a class="tw__grayscale hover:tw__grayscale-0 focus:tw__grayscale-0"
+							href="https://www.innovatiofounder.com/" target="_blank" rel="noopener noreferrer">
+							<img class="tw__h-12" src="{{ site.baseurl }}/assets/images/partners/innovatio.png" alt="Innovatio">
+						</a>
+					</div>
+					<div
+						class="tw__mt-4 tw__ml-8 tw__flex tw__flex-shrink-0 tw__flex-grow lg:tw__ml-4 lg:tw__flex-grow-0">
+						<a class="tw__grayscale hover:tw__grayscale-0 focus:tw__grayscale-0"
+							href="https://cybertechpp.io/" target="_blank" rel="noopener noreferrer">
+							<img class="tw__h-12" src="{{ site.baseurl }}/assets/images/partners/CYberTechClear-logo.png" alt="Cyber Tech ++">
+						</a>
+					</div>
+					<div
+						class="tw__mt-4 tw__ml-8 tw__flex tw__flex-shrink-0 tw__flex-grow lg:tw__ml-4 lg:tw__flex-grow-0">
+						<a class="tw__grayscale hover:tw__grayscale-0 focus:tw__grayscale-0"
+							href="https://youtu.be/DXuGpw6KyKI" target="_blank" rel="noopener noreferrer">
+							<img class="tw__h-12" src="{{ site.baseurl }}/assets/images/partners/athena-logo.png" alt="Athena">
+						</a>
+					</div>
+					<div
+						class="tw__mt-4 tw__ml-8 tw__flex tw__flex-shrink-0 tw__flex-grow lg:tw__ml-4 lg:tw__flex-grow-0">
+						<a href="https://cardano.ideascale.com/c/idea/414067" target="_blank" re
+							class="tw__grayscale hover:tw__grayscale-0 focus:tw__grayscale-0" l="noopener noreferrer">
+							<img class="tw__h-12" src="{{ site.baseurl }}/assets/images/partners/adasign.svg" alt="Ada Stamp">
+						</a>
+					</div>
+					<div
+						class="tw__mt-4 tw__ml-8 tw__flex tw__flex-shrink-0 tw__flex-grow lg:tw__ml-4 lg:tw__flex-grow-0">
+						<a class="tw__grayscale hover:tw__grayscale-0 focus:tw__grayscale-0"
+							href="https://www.snapbrillia.com/" target="_blank" rel="noopener noreferrer">
+							<img class="tw__h-12" src="{{ site.baseurl }}/assets/images/partners/snapbrillia-logo.svg" alt="Snapbrillia">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Features -->
+	<section id="features"
+		class="tw__bg-gradient-to-br tw__from-primary-500 tw__to-primary-700 tw__relative tw__py-16 sm:tw__py-24 lg:tw__py-32">
+		<div
+			class="tw__mx-auto tw__max-w-md tw__px-4 tw__text-center sm:tw__max-w-3xl sm:tw__px-6 lg:tw__max-w-7xl lg:tw__px-8">
+			<h2 class="tw__text-lg tw__font-semibold tw__text-green-300">Query Efficiently</h2>
+			<p class="tw__mt-2 tw__text-3xl tw__font-bold tw__tracking-tight tw__text-white sm:tw__text-4xl">
+				Everything you can to do with Stream Cardano</p>
+			<p class="tw__mx-auto tw__mt-5 tw__max-w-prose tw__text-xl tw__text-gray-300">Some of the key features
+				that makes Stream Cardano special</p>
+			<div class="tw__mt-12">
+				<div class="tw__grid tw__grid-cols-1 tw__gap-8 sm:tw__grid-cols-2 lg:tw__grid-cols-3">
+					<div class="tw__pt-6">
+						<div class="tw__flow-root tw__rounded-lg tw__bg-gray-50 tw__px-6 tw__pb-8">
+							<div class="tw__-mt-6">
+								<div>
+									<span
+										class="tw__inline-flex tw__items-center tw__justify-center tw__rounded-md tw__bg-blue-500 tw__p-3 tw__shadow-lg">
+										<img loading="lazy" src="{{ site.baseurl }}/assets/images/icons/cloud_arrow_up.svg" title="Multi Tenancy"
+											alt="Multi Tenancy" class="tw__h-6 tw__w-6">
+									</span>
+								</div>
+								<h3 class="tw__mt-8 tw__text-lg tw__font-medium tw__tracking-tight tw__text-gray-900">
+									Multi-tenancy</h3>
+								<p class="tw__mt-5 tw__text-base tw__text-gray-500">Multiple users will
+									share the same backend to minimize resource consumption and cost. That means
+									that different user accounts need to be strictly separated.</p>
+							</div>
+						</div>
+					</div>
 
-  <p class="rss-subscribe text-center">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+					<div class="tw__pt-6">
+						<div class="tw__flow-root tw__rounded-lg tw__bg-gray-50 tw__px-6 tw__pb-8">
+							<div class="tw__-mt-6">
+								<div>
+									<span
+										class="tw__inline-flex tw__items-center tw__justify-center tw__rounded-md tw__bg-blue-500 tw__p-3 tw__shadow-lg">
+										<img loading="lazy" src="{{ site.baseurl }}/assets/images/icons/lock_closed.svg" title="Isolation and Security"
+											alt="Isolation and Security" class="tw__h-6 tw__w-6">
+									</span>
+								</div>
+								<h3 class="tw__mt-8 tw__text-lg tw__font-medium tw__tracking-tight tw__text-gray-900">
+									Isolation &amp; Security</h3>
+								<p class="tw__mt-5 tw__text-base tw__text-gray-500">User accounts will be kept
+									totally separate from one another. Each project only has access to one project
+									wallet via wallet service.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="tw__pt-6">
+						<div class="tw__flow-root tw__rounded-lg tw__bg-gray-50 tw__px-6 tw__pb-8">
+							<div class="tw__-mt-6">
+								<div>
+									<span
+										class="tw__inline-flex tw__items-center tw__justify-center tw__rounded-md tw__bg-blue-500 tw__p-3 tw__shadow-lg">
+										<img loading="lazy" src="{{ site.baseurl }}/assets/images/icons/bolt.svg" title="Caching" alt="Caching"
+											class="tw__h-6 tw__w-6">
+									</span>
+								</div>
+								<h3 class="tw__mt-8 tw__text-lg tw__font-medium tw__tracking-tight tw__text-gray-900">
+									Caching</h3>
+								<p class="tw__mt-5 tw__text-base tw__text-gray-500">Caching results of the query for
+									production, and share triggers for subscription over many instances of the same
+									client application.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="tw__pt-6">
+						<div class="tw__flow-root tw__rounded-lg tw__bg-gray-50 tw__px-6 tw__pb-8">
+							<div class="tw__-mt-6">
+								<div>
+									<span
+										class="tw__inline-flex tw__items-center tw__justify-center tw__rounded-md tw__bg-blue-500 tw__p-3 tw__shadow-lg">
+										<img loading="lazy" src="{{ site.baseurl }}/assets/images/icons/recycle.svg" title="Access Token Lifecycle"
+											alt="Access Token Lifecycle" class="tw__h-6 tw__w-6">
+									</span>
+								</div>
+								<h3 class="tw__mt-8 tw__text-lg tw__font-medium tw__tracking-tight tw__text-gray-900">
+									Access Token Lifecycle</h3>
+								<p class="tw__mt-5 tw__text-base tw__text-gray-500">Multiple access token lifecycle
+									for multiple environment such as development, staging and production.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="tw__pt-6">
+						<div class="tw__flow-root tw__rounded-lg tw__bg-gray-50 tw__px-6 tw__pb-8">
+							<div class="tw__-mt-6">
+								<div>
+									<span
+										class="tw__inline-flex tw__items-center tw__justify-center tw__rounded-md tw__bg-blue-500 tw__p-3 tw__shadow-lg">
+										<img loading="lazy" src="{{ site.baseurl }}/assets/images/icons/sheild_check.svg"
+											title="Fair Sharing & DDoS prevention" alt="Fair Sharing & DDoS prevention"
+											class="tw__h-6 tw__w-6">
+									</span>
+								</div>
+								<h3 class="tw__mt-8 tw__text-lg tw__font-medium tw__tracking-tight tw__text-gray-900">
+									Fair Sharing &amp; DDoS prevention</h3>
+								<p class="tw__mt-5 tw__text-base tw__text-gray-500">We enact the limits at different
+									stages, to assure a size of processing per query and per dApp are within
+									reasonable limits.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="tw__pt-6">
+						<div class="tw__flow-root tw__rounded-lg tw__bg-gray-50 tw__px-6 tw__pb-8">
+							<div class="tw__-mt-6">
+								<div>
+									<span
+										class="tw__inline-flex tw__items-center tw__justify-center tw__rounded-md tw__bg-blue-500 tw__p-3 tw__shadow-lg">
+										<img loading="lazy" src="{{ site.baseurl }}/assets/images/icons/server.svg"
+											title="Integrated Debugging Environment" alt="IDE" class="tw__h-6 tw__w-6">
+									</span>
+								</div>
+								<h3 class="tw__mt-8 tw__text-lg tw__font-medium tw__tracking-tight tw__text-gray-900">
+									IDE</h3>
+								<p class="tw__mt-5 tw__text-base tw__text-gray-500">An Integrated Debugging
+									Environment that allows you to subscribe and execute queries in real-time </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Take Action Page -->
+	<section class="tw__bg-blue-50">
+		<div
+			class="tw__mx-auto tw__max-w-7xl tw__py-12 tw__px-4 sm:tw__px-6 lg:tw__flex lg:tw__items-center lg:tw__justify-between lg:tw__py-24 lg:tw__px-8">
+			<h2 class="tw__text-3xl tw__font-bold tw__tracking-tight tw__text-gray-900 md:tw__text-4xl">
+				<span class="tw__block">Ready for blockchain revolution?</span>
+				<span class="tw__block tw__text-yellow-500">Start today.</span>
+			</h2>
+			<div class="tw__mt-8 tw__flex lg:tw__mt-0 lg:tw__flex-shrink-0">
+				<div class="tw__inline-flex tw__rounded-md tw__shadow">
+					<a class="tw__button tw__medium" href="/app/signup">Get Started</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Contacts Section -->
+	<section id="contact" class="tw__bg-white tw__border-t tw__border-gray-200">
+		<div class="tw__mx-auto tw__max-w-7xl tw__py-16 tw__px-4 sm:tw__py-24 sm:tw__px-6 lg:tw__px-8">
+			<h2 class="tw__text-center tw__text-3xl tw__font-bold tw__tracking-tight tw__text-gray-900">Contact us
+			</h2>
+			<ul class="tw__mt-8 tw__flex tw__items-center tw__justify-around tw__flex-wrap tw__gap-2">
+				<li>
+					<a href="{{ site.discord }}" target="_blank" rel="noopener noreferrer"
+						class="tw__block tw__shadow-md tw__rounded-lg tw__p-4">
+						<img class="tw__w-12 tw__h-12 md:tw__w-20 md:tw__h-20" alt="Discord"
+							src="{{ site.baseurl }}/assets/images/contacts/discord_logo.svg">
+					</a>
+				</li>
+				<li>
+					<a href="{{ site.keybase }}" target="_blank" rel="noopener noreferrer"
+						class="tw__block tw__shadow-md tw__rounded-lg tw__p-4">
+						<img class="tw__w-12 tw__h-12 md:tw__w-20 md:tw__h-20" alt="Keybase"
+							src="{{ site.baseurl }}/assets/images/contacts/keybase_logo.svg">
+					</a>
+				</li>
+				<li>
+					<a href="{{ site.telegram }}" target="_blank" rel="noopener noreferrer"
+						class="tw__block tw__shadow-md tw__rounded-lg tw__p-4">
+						<img class="tw__w-12 tw__h-12 md:tw__w-20 md:tw__h-20" alt="Telegram messenger"
+							src="{{ site.baseurl }}/assets/images/contacts/telegram_logo.svg">
+					</a>
+				</li>
+				<li>
+					<a href="{{ site.calanderly }}" target="_blank" rel="noopener noreferrer"
+						class="tw__block tw__shadow-md tw__rounded-lg tw__p-4">
+						<img class="tw__w-12 tw__h-12 md:tw__w-20 md:tw__h-20" alt="Calenderly"
+							src="{{ site.baseurl }}/assets/images/contacts/calendly_logo.svg">
+					</a>
+				</li>
+				<li>
+					<a href="{{ site.email_stream_cardano }}"
+						class="tw__block tw__shadow-md tw__rounded-lg tw__p-4">
+						<img class="tw__w-12 tw__h-12 md:tw__w-20 md:tw__h-20" alt="Email"
+							src="{{ site.baseurl }}/assets/images/contacts/email_logo.svg">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+</main>
+
