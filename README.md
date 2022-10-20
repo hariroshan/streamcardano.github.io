@@ -15,6 +15,11 @@ sudo apt-get install ruby-bundler
 
 To serve locally:
 ```sh
+# To tailwind watcher
+npm run tailwindWatch 
+# To start jekyll 
+npm run serve
+# or
 bundle exec -- jekyll serve
 ```
 
