@@ -1,11 +1,12 @@
-
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
 @layer base {
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
+    html {
+      @apply tw__scroll-smooth;
+    }
     html, body {
       @apply tw__bg-white tw__h-full;
     }

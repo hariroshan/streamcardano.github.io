@@ -418,6 +418,10 @@ video {
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   height: 100%;
   --tw-bg-opacity: 1;
