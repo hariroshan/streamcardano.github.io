@@ -23,14 +23,12 @@ layout: default
     <div class="tw__relative tw__mx-auto tw__max-w-md tw__px-4 sm:tw__max-w-3xl sm:tw__px-6 lg:tw__px-0">
       <!-- Content area -->
       <div class="tw__pt-12 sm:tw__pt-16 lg:tw__pt-20">
-        {% if page.categories %}
-        <div class="category text-center">
+        {% if page.categories.size > 0 %}
           <a href="#">
             <span class="tw__rounded-lg tw__px-2 tw__py-1 tw__text-xs tw__bg-gray-200 tw__uppercase tw__font-bold tw__text-primary-700">
               {{ page.categories[0] }}
             </span>
           </a>
-        </div>
         {% endif %}
         <h2 class="tw__text-3xl tw__font-bold tw__tracking-tight tw__text-gray-900 sm:tw__text-4xl">{{ page.title }}
         </h2>
